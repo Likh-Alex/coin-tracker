@@ -1,0 +1,17 @@
+.button {
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-family: inherit;
+    font-weight: 400;
+    background: teal;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.button:disabled,button[disabled]{
+    background: #ccc;
+    cursor: not-allowed;
+}

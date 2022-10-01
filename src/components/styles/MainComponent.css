@@ -1,0 +1,12 @@
+.mainContainer {
+    width: 100%;  
+}
+
+.datePickers {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
