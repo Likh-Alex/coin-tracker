@@ -12,6 +12,7 @@ import {data} from '../statics/user.js'
 import * as _ from 'lodash';
 
 import './styles/MainComponent.css'
+import {components} from "react-select";
 
 export default class MainComponent extends Component {
     constructor(props) {
@@ -29,7 +30,6 @@ export default class MainComponent extends Component {
         return _.map(_.filter(data.info.accounts, account => account.maskedPan.length), account => {
             return {value: account.id, label: account.maskedPan[0]}
         })
-
     }
 
     onAccountSelect(account) {

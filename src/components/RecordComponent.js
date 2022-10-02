@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import './styles/Record.css'
+import './styles/Record.scss'
 
 export default class RecordComponent extends Component {
     render() {
@@ -13,18 +13,9 @@ export default class RecordComponent extends Component {
         })
         return (
             <div className='recordWrapper'>
-                <div className='row'>
-                    <span className='label'>Date:</span>
-                    <span>{date}</span>
-                </div>
-                <div className='row'>
-                    <span className='label'>Amount:</span>
-                    <span>{amout} UAH</span>
-                </div>
-                <div className='row'>
-                    <span className='label'>Description:</span>
-                    <span>{description}</span>
-                </div>
+                <span className={'rowCell date'}>{date}</span>
+                <span className={'rowCell description'}>{description}</span>
+                <span className={'rowCell amount'}>{amout} UAH</span>
             </div>
         )
     }

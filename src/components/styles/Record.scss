@@ -1,0 +1,29 @@
+.recordWrapper {
+    font-size: 20px;
+    background: grey;
+    border-radius: 4px;
+    padding: 8px;
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+
+    .rowCell {
+        display: inline-block;
+        font-size: 0.9em;
+
+        &.date {
+            min-width: 35%;
+            text-align: left;
+        }
+
+        &.description {
+            width: 40%;
+            text-align: left;
+        }
+
+        &.amount {
+            min-width: 150px;
+            text-align: right;
+        }
+    }
+}
